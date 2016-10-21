@@ -30,12 +30,12 @@ activityLabels = read.table("activity_labels.txt",col.names = c("ActivityId", "A
 
 ## train data
 subjectTrain = read.table("./train/subject_train.txt",col.names = "SubjectId") 
-xTrain       = read.table("./train/x_train.txt",col.names = features[,2])  
+xTrain       = read.table("./train/x_train.txt",col.names = features[,2],check.names=FALSE)  
 yTrain       = read.table("./train/y_train.txt",col.names = "ActivityId") 
 
 ## test data
 subjectTest = read.table("./test/subject_test.txt",col.names = "SubjectId")   
-xTest       = read.table("./test/x_test.txt",col.names = features[,2]) 
+xTest       = read.table("./test/x_test.txt",col.names = features[,2],check.names=FALSE) 
 yTest       = read.table("./test/y_test.txt",col.names = "ActivityId")  
 
 # Create the final train and test dataset by merging yTrain, subjectTrain, and xTrain / yTest, subjectTrain, and xTest 
