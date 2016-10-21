@@ -78,8 +78,8 @@ names(UCI_HAR_Dataset_activities) <- gsub('^t',"TimeDomain.",names(UCI_HAR_Datas
 ========================================================================================================================
 ## 5 Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-UCI_HAR_Dataset_avg <-aggregate(. ~SubjectId + ActivityId, UCI_HAR_Dataset_activities, mean)
-UCI_HAR_Dataset_avg <- UCI_HAR_Dataset_avg [order(UCI_HAR_Dataset_avg $SubjectId, UCI_HAR_Dataset_avg $ActivityId),]
+UCI_HAR_Dataset_avg <-aggregate(. ~SubjectId + Activity, UCI_HAR_Dataset_activities, mean)
+UCI_HAR_Dataset_avg <- UCI_HAR_Dataset_avg [order(UCI_HAR_Dataset_avg $SubjectId, UCI_HAR_Dataset_avg $Activity),]
 
 ## write a text file
 write.table(UCI_HAR_Dataset_avg, file = "tidydata.txt",row.name=FALSE)
