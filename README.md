@@ -69,23 +69,32 @@ UCI_HAR_Dataset_activities = merge(UCI_HAR_Dataset_measurements,activityLabels,b
 
 * remove parentheses
 names(UCI_HAR_Dataset_activities) <- gsub("\\()","",names(UCI_HAR_Dataset_activities))        
-* relabel means                     
+
+* relabel means   
 names(UCI_HAR_Dataset_activities) <- gsub("-mean","Mean",names(UCI_HAR_Dataset_activities))                       
+
 * relabel standard deviation 
 names(UCI_HAR_Dataset_activities) <- gsub("-std$","StdDev",names(UCI_HAR_Dataset_activities))                     
-*relabel Acceleration
+
+* relabel Acceleration
 names(UCI_HAR_Dataset_activities) <- gsub('Acc',"Acceleration",names(UCI_HAR_Dataset_activities))                  
+
 * relabel AngularAcceleration
 names(UCI_HAR_Dataset_activities) <- gsub('GyroJerk',"AngularAcceleration",names(UCI_HAR_Dataset_activities))      
+
 * relabel AngularSpeed 
 names(UCI_HAR_Dataset_activities) <- gsub('Gyro',"AngularSpeed",names(UCI_HAR_Dataset_activities))                 
+
 * relabel Magnitude
 names(UCI_HAR_Dataset_activities) <- gsub('Mag',"Magnitude",names(UCI_HAR_Dataset_activities))                     
+
 * relabel FrequencyDomain
 names(UCI_HAR_Dataset_activities) <- gsub('^f',"FrequencyDomain.",names(UCI_HAR_Dataset_activities))               
+
 * relabel Frequency
 names(UCI_HAR_Dataset_activities) <- gsub(("Freq\\."),"Frequency.",names(UCI_HAR_Dataset_activities))              
-* relabel TimeDomain
+
+* relabel TimeDomain  
 names(UCI_HAR_Dataset_activities) <- gsub('^t',"TimeDomain.",names(UCI_HAR_Dataset_activities))                    
 
 ## 5 Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
