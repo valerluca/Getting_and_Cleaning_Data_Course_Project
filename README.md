@@ -1,6 +1,6 @@
 # Getting and Cleaning Data Course Project
 
-The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set using R. the putcome is to calulate Mean and Standard Deviations on Data Collected from Subjects Wearing a smartphone and performing various activities.
+The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set using R. The outcome is to calulate the mean and the standard deviations of Data Collected from subjects wearing a smartphone and performing various activities.
 
 ##Data used for the analysis
 
