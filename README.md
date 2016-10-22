@@ -30,9 +30,9 @@ Prior to run the script you should::
 * Move the run_analysis.R script to the same directory that you un-zipped the file.
 
   
------------------------------------------------------------------------------------------------------------------------------------
-## Script
------------------------------------------------------------------------------------------------------------------------------------
+
+# Script
+
 
 ## 1 Merges the training and the test sets to create one data set.
 library(plyr)  ## load library needed 
