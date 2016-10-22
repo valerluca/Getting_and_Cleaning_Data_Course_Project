@@ -46,7 +46,7 @@ see README.md file and run_analysis.R file.
 
 features: dataset for the feature labels activities: dataset for the activity labels
 
-#The output file tidydata.txt contans the following variables:
+* The output file tidydata.txt contans the following variables. In the R script tidydata is written from UCI_HAR_Dataset_avg table.
 
 Only features for mean and standard deviations measures were kept. That means that from the original 561 feature vector the output is  reduced to 79 values for per each ativity.
 
@@ -133,6 +133,4 @@ Only features for mean and standard deviations measures were kept. That means th
 [81] "FrequencyDomain.BodyBodyAngularAccelerationMagnitudeStdDev"  
 [82] "FrequencyDomain.BodyBodyAngularAccelerationMagnitudeMeanFreq"
 
-#Final data tidy data set output
 
-tidydata.txt is the final data set that contains the column means for each variable for each subject for each activity. In the R sceipt is written from UCI_HAR_Dataset_avg table.
