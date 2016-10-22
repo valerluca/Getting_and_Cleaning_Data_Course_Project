@@ -36,9 +36,11 @@ Prior to run the script you should::
 
 ## 1 Merges the training and the test sets to create one data set.
 
-library(plyr)  ## load library needed 
+* load library needed 
+library(plyr)   load library needed 
 
-setwd("~/UCI HAR Dataset")  ## Set working directory 
+* Set working directory
+setwd("~/UCI HAR Dataset")   
 
 * Read in the data from files and assign columns names: features.txt, activity_labels.txt, subject_train.txt, x_train.txt, y_train.txt, subject_test.txt, x_test.txt, y_test.txt
 features     = read.table("features.txt",header=FALSE) 
